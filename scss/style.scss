@@ -1,0 +1,70 @@
+ @import "../css/foundation/reset";
+ @import "../css/layout/header";
+ @import "../css/layout/footer";
+ @import "../css/layout/sidber";
+ @import "../css/object/component/btn";
+ @import "../css/object/component/project/home";
+ @import "../css/object/component/utility/util";
+
+.top-content{
+   display: flex;
+ }
+
+// .l-header{
+//   border: 1px solid;
+// }
+
+
+  
+
+
+.main{
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.l-main-1{
+    padding-left: 111px;
+    padding-right: 80px;
+}
+  .l-main-2{
+    width: 625px;
+    height: 1196px;   
+}
+
+.l-main-3{
+  position: relative;
+}
+.l-main-4{
+  background-color: #707070;
+  width: 800px;
+  height: 452px;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+
+.l-main-5{
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.l-main-6{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 500px;
+    height: 400px;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+
+  
+
