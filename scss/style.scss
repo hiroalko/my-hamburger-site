@@ -1,10 +1,5 @@
- @import "../css/foundation/reset";
- @import "../css/layout/header";
- @import "../css/layout/footer";
- @import "../css/layout/sidber";
- @import "../css/object/component/btn";
- @import "../css/object/component/project/home";
- @import "../css/object/component/utility/util";
+
+ @import url(/css/style.css);
 
 .top-content{
    display: flex;
@@ -28,7 +23,7 @@
     padding-right: 80px;
 }
   .l-main-2{
-    width: 625px;
+    width: 40%;
     height: 1196px;   
 }
 
@@ -37,7 +32,7 @@
 }
 .l-main-4{
   background-color: #707070;
-  width: 800px;
+  width: 61%;
   height: 452px;
   position: absolute;
   top: 0;
