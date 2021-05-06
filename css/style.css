@@ -92,10 +92,12 @@ table {
 .footer {
   display: flex;
   flex-direction: column;
+  width: 100vh;
 }
 
 .l-sidber {
   background-color: bisque;
+
 }
 
 .l-sidber-title {
@@ -124,18 +126,24 @@ table {
   display: flex;
 }
 
+.l-front-main{
+  width: 100vh;
+}
+
 .main {
   justify-content: space-between;
   padding: 35px;
-}
+  width: 40vh;
+} 
 
 .l-main-left {
-  padding-left: 111px;
-  padding-right: 80px;
+  /* padding-left: 111px;
+  padding-right: 80px; */
+  height: 1196px;
 }
 
 .l-main-right {
-  width: 40%;
+  /* width: 40%; */
   height: 1196px;
 }
 
@@ -145,7 +153,7 @@ table {
 
 .l-main-block {
   background-color: #707070;
-  width: 61%;
+  width: 100vh;
   height: 452px;
   position: absolute;
   top: 0;
