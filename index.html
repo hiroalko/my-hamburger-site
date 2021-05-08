@@ -8,40 +8,40 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/scss/reset.css">
+    <link rel="stylesheet" href="/scss/style.css">
     <title>hamburgersite</title>
 </head>
 <body>
-    <div class="top-content">
-        <div class="left-content">
-        <header class="l-header">
-        <div class="p-header1">
-            <h1 class="p-header-title">Hamburger</h1>
+    <div class="l-header"><!--top-content -->
+         <div class="l-header-left"><!--left-content-->
+        <header class="l-header"><!---l-header-->
+        <div class="p-header1"><!--p-header1-->
+            <h1 class="p-header-title">Hamburger</h1><!--p-header-title-->
             <form class="">
-                <input type="search" name="search" class="p-header-search" placeholder="&#xf002;">
-                 <input type="submit" name="submit" class="p-header-submit" value="検索">
+                <input type="search" name="search" class="p-header-search" placeholder="&#xf002;"><!--"p-header-search-->
+                 <input type="submit" name="submit" class="p-header-submit" value="検索"><!--p-header-submit-->
              </form>   
         </div>
         </header>
        <main class="l-main">
-           <img src="/img/front-header.png" alt="#" class="l-front-main">
-          <img src="/img/front-maini1.png" alt="#" class="l-main-left main">
-          <img src="/img/front-main2.png" alt="#" class="l-main-right main">
+           <img src="/img/front-header.png" alt="#" class="l-front-main"><!--l-front-main-->
+          <img src="/img/front-maini1.png" alt="#" class="l-main-left main"><!---l-main-left main-->
+          <img src="/img/front-main2.png" alt="#" class="l-main-right main"><!--l-main-right main-->
           <div class="l-main-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.991898658345!2d139.7454329!3d35.6585805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1618085921804!5m2!1sja!2sjp" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="l-main-block">
-        <h2 class="l-main-heading">見出しが入ります</h2>
-        <p class="l-main-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <div class="l-main-block"><!--l-main-block-->
+        <h2 class="l-main-heading">見出しが入ります</h2><!--l-main-heading-->
+        <p class="l-main-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p><!--l-main-text-->
         </div>
         </div>
         </main>     
     </div>
     <div class="l-sidber">
-        <h2 class="l-sidber-title">Menu</h2>
-        <p class="l-sidber-category">ハンバーガー</p>
+        <h2 class="l-sidber-title">Menu</h2><!--l-sidber-title-->
+        <p class="l-sidber-category">ハンバーガー</p><!--l-sidber-category-->
         <ul>
-            <li class="l-sidber-menu l-sidber-menu-menu">ハンバーガー</li>
-            <li class="l-sidber-menu">チーズバーガー</li>
+            <li class="l-sidber-menu l-sidber-menu-menu">ハンバーガー</li><!--l-sidber-menu l-sidber-menu-menu-->
+            <li class="l-sidber-menu">チーズバーガー</li><!--li要素はl-sidber-menuで統一-->
             <li class="l-sidber-menu">テリヤキバーガー</li>
             <li class="l-sidber-menu">アボガドバーガー</li>
             <li class="l-sidber-menu">フィッシュバーガー</li>
@@ -50,7 +50,7 @@
             <li class="l-sidber-menu">チキンバーガー</li>
         </ul>
 
-        <p class="l-sidber-category">サイド</p>
+        <p class="l-sidber-category">サイド</p><!--l-sidber-category-->
         <ul>
             <li class="l-sidber-menu">ポテト</li>
             <li class="l-sidber-menu">サラダ</li>
@@ -58,7 +58,7 @@
             <li class="l-sidber-menu">コーン</li>
         </ul>
 
-        <p class="l-sidber2">ドリンク</p>
+        <p class="l-sidber2">ドリンク</p><!--l-sidber2-->
         <ul>
             <li class="l-sidber-menu">コーラ</li>
             <li class="l-sidber-menu">ファンタ</li>
