@@ -53,9 +53,7 @@ table {
   border-spacing: 0;
 }
 
-.top-content {
-    display: flex;
-  }
+
 .p-header1 {
     padding: 20px 15px;
     background-color: bisque;
@@ -63,7 +61,7 @@ table {
     display: flex;
   }
   
-  .p-header2 {
+  .p-header-title {
     text-align: center;
     vertical-align: middle;
     margin-top: 5px;
@@ -72,7 +70,7 @@ table {
     font-weight: bold;
   }
   
-  .p-header4 {
+  .p-header-search {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -86,35 +84,65 @@ table {
     font-size: 25px;
   }
   
-  .p-header5 {
+  .p-header-submit {
     border-radius: 10px;
     width: 136px;
     height: 46px;
     padding: 15px;
   }
+  .footer {
+    display: flex;
+    flex-direction: column;
+}
   
+  .l-sidber{
+      background-color: bisque;
+  }
+  .l-sidber-title {
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 82px 235px 85px 45px;
+  }
   
+  .l-sidber-category {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 217px 170px 40px 46px;
+  }
+  
+  .l-sidber-menu{
+    font-size: 20px;
+    padding: 23px 121px 23px 66px;
+  }
+  
+  .l-sidber-menu-menu {
+    padding-top: 37px;
+  }
+  .l-header {
+    display: flex;
+  }
   
   .main {
     justify-content: space-between;
     padding: 35px;
   }
   
-  .l-main-1 {
+  .l-left {
     padding-left: 111px;
     padding-right: 80px;
   }
   
-  .l-main-2 {
+  .p-main-right {
     width: 40%;
     height: 1196px;
   }
   
-  .l-main-3 {
+  .p-main-maps {
     position: relative;
   }
   
-  .l-main-4 {
+  .p-mani-block {
     background-color: #707070;
     width: 61%;
     height: 452px;
@@ -123,7 +151,7 @@ table {
     opacity: 0.7;
   }
   
-  .l-main-5 {
+  .p-main-heading {
     position: absolute;
     top: 30px;
     left: 120px;
@@ -132,7 +160,7 @@ table {
     color: #ffffff;
   }
   
-  .l-main-6 {
+  .p-main-text {
     position: absolute;
     top: 140px;
     left: 110px;
@@ -142,25 +170,4 @@ table {
     height: 400px;
     color: #ffffff;
     line-height: 30px;
-  }
-  .l-sidber1 {
-    font-size: 34px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    padding: 82px 235px 85px 45px;
-  }
-  
-  .l-sidber2 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 217px 170px 40px 46px;
-  }
-  
-  .l-sidber3 {
-    font-size: 20px;
-    padding: 23px 121px 23px 66px;
-  }
-  
-  .l-sidber4 {
-    padding-top: 37px;
   }
