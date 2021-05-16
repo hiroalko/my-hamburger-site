@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(/Users/ishimaruhiroaki/Desktop/hamburgersite/scss/style.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,112 +52,8 @@ table {
   border-spacing: 0;
 }
 
-.p-header1 {
-  padding: 20px 15px;
-  background-color: bisque;
-  justify-content: space-between;
+.l-header {
   display: flex;
-}
-
-.p-header2 {
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 5px;
-  font-size: 64px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
-
-.p-header4 {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border-radius: 10px;
-  width: 396px;
-  height: 46px;
-  font-size: 25px;
-}
-
-.p-header5 {
-  border-radius: 10px;
-  width: 136px;
-  height: 46px;
-  padding: 15px;
-}
-
-.main {
-  justify-content: space-between;
-  padding: 35px;
-}
-
-.l-main-1 {
-  padding-left: 111px;
-  padding-right: 80px;
-}
-
-.l-main-2 {
-  width: 40%;
-  height: 1196px;
-}
-
-.l-main-3 {
-  position: relative;
-}
-
-.l-main-4 {
-  background-color: #707070;
-  width: 61%;
-  height: 452px;
-  position: absolute;
-  top: 0;
-  opacity: 0.7;
-}
-
-.l-main-5 {
-  position: absolute;
-  top: 30px;
-  left: 120px;
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.l-main-6 {
-  position: absolute;
-  top: 140px;
-  left: 110px;
-  font-size: 16px;
-  font-weight: bold;
-  width: 500px;
-  height: 400px;
-  color: #ffffff;
-  line-height: 30px;
-}
-
-.l-sidber1 {
-  font-size: 34px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  padding: 82px 235px 85px 45px;
-}
-
-.l-sidber2 {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 217px 170px 40px 46px;
-}
-
-.l-sidber3 {
-  font-size: 20px;
-  padding: 23px 121px 23px 66px;
-}
-
-.l-sidber4 {
-  padding-top: 37px;
 }
 
 .p-header1 {
@@ -166,14 +61,13 @@ table {
   background-color: bisque;
   justify-content: space-between;
   display: flex;
-  color: bisque;
 }
 
 .p-header-title {
   text-align: center;
   vertical-align: middle;
   margin-top: 5px;
-  font-size: 64px;
+  font-size: 4rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
@@ -199,41 +93,6 @@ table {
   padding: 15px;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.l-sidber {
-  background-color: bisque;
-}
-
-.l-sidber-title {
-  font-size: 34px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  padding: 82px 235px 85px 45px;
-}
-
-.l-sidber-category {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 217px 170px 40px 46px;
-}
-
-.l-sidber-menu {
-  font-size: 20px;
-  padding: 23px 121px 23px 66px;
-}
-
-.l-sidber-menu-menu {
-  padding-top: 37px;
-}
-
-.l-header {
-  display: flex;
-}
-
 .main {
   justify-content: space-between;
   padding: 35px;
@@ -249,7 +108,7 @@ table {
   height: 1196px;
 }
 
-.p-main-maps {
+.l-main-maps {
   position: relative;
 }
 
@@ -281,5 +140,36 @@ table {
   height: 400px;
   color: #ffffff;
   line-height: 30px;
+}
+
+.l-sidber {
+  background-color: bisque;
+}
+
+.p-sidber-title {
+  font-size: 34px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 82px 235px 85px 45px;
+}
+
+.p-sidber-category {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 217px 170px 40px 46px;
+}
+
+.p-sidber-menu {
+  font-size: 20px;
+  padding: 23px 121px 23px 66px;
+}
+
+.p-sidber-menu-menu {
+  padding-top: 37px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,6 @@
 // .l-footerのクラス名　ヘッダーやフッターなど大枠のレイアウトに関する定義。装飾はなく枠だけを用意しているイメージ。
+
+.footer {
+    display: flex;
+    flex-direction: column;
+  }

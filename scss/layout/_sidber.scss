@@ -1,21 +1,26 @@
-.l-sidber1 {
-    font-size: 34px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    padding: 82px 235px 85px 45px;
-  }
+.l-sidber {
+  background-color: bisque;
   
-  .l-sidber2 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 217px 170px 40px 46px;
-  }
-  
-  .l-sidber3 {
-    font-size: 20px;
-    padding: 23px 121px 23px 66px;
-  }
-  
-  .l-sidber4 {
-    padding-top: 37px;
-  }
+}
+
+.p-sidber-title {
+  font-size: 34px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 82px 235px 85px 45px;
+}
+
+.p-sidber-category {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 217px 170px 40px 46px;
+}
+
+.p-sidber-menu {
+  font-size: 20px;
+  padding: 23px 121px 23px 66px;
+}
+
+.p-sidber-menu-menu {
+  padding-top: 37px;
+}

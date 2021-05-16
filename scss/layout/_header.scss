@@ -1,22 +1,26 @@
 // header,footer,.l-が頭文字にくる
 
+.l-header{
+  display: flex;
+}
+
 .p-header1 {
     padding: 20px 15px;
     background-color: bisque;
     justify-content: space-between;
     display: flex;
   }
-  
-  .p-header2 {
+  .p-header-title {
     text-align: center;
     vertical-align: middle;
     margin-top: 5px;
-    font-size: 64px;
+    font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
   }
+
   
-  .p-header4 {
+  .p-header-search {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -30,10 +34,15 @@
     font-size: 25px;
   }
   
-  .p-header5 {
+  .p-header-submit {
     border-radius: 10px;
     width: 136px;
     height: 46px;
     padding: 15px;
   }
+
+  
+  
+
+
   
