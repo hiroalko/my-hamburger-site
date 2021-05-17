@@ -4,13 +4,13 @@
   display: flex;
 }
 
-.p-header1 {
+.p-header {
     padding: 20px 15px;
     background-color: bisque;
     justify-content: space-between;
     display: flex;
   }
-  .p-header-title {
+  .p-header__title {
     text-align: center;
     vertical-align: middle;
     margin-top: 5px;
@@ -20,7 +20,7 @@
   }
 
   
-  .p-header-search {
+  .p-header__search {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -31,10 +31,10 @@
     border-radius: 10px;
     width: 396px;
     height: 46px;
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   
-  .p-header-submit {
+  .p-header__submit {
     border-radius: 10px;
     width: 136px;
     height: 46px;

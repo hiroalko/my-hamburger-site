@@ -3,21 +3,21 @@
   padding: 35px;
 }
 
-.l-left {
-  padding-left: 111px;
-  padding-right: 80px;
-}
+// .l-left {
+//   padding-left: 111px;
+//   padding-right: 80px;
+// }
 
-.p-main-right {
-  width: 40%;
-  height: 1196px;
-}
+// .p-main-right {
+//   width: 40%;
+//   height: 1196px;
+// }
 
-.l-main-maps {
+.l-main__maps {
   position: relative;
 }
 
-.p-mani-block {
+.p-mani__block {
   background-color: #707070;
   width: 61%;
   height: 452px;
@@ -26,7 +26,7 @@
   opacity: 0.7;
 }
 
-.p-main-heading {
+.p-main__heading {
   position: absolute;
   top: 30px;
   left: 120px;
@@ -35,11 +35,11 @@
   color: #ffffff;
 }
 
-.p-main-text {
+.p-main__text {
   position: absolute;
   top: 140px;
   left: 110px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   width: 500px;
   height: 400px;

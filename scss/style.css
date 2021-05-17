@@ -56,14 +56,14 @@ table {
   display: flex;
 }
 
-.p-header1 {
+.p-header {
   padding: 20px 15px;
   background-color: bisque;
   justify-content: space-between;
   display: flex;
 }
 
-.p-header-title {
+.p-header__title {
   text-align: center;
   vertical-align: middle;
   margin-top: 5px;
@@ -72,7 +72,7 @@ table {
   font-weight: bold;
 }
 
-.p-header-search {
+.p-header__search {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -83,10 +83,10 @@ table {
   border-radius: 10px;
   width: 396px;
   height: 46px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
-.p-header-submit {
+.p-header__submit {
   border-radius: 10px;
   width: 136px;
   height: 46px;
@@ -98,21 +98,11 @@ table {
   padding: 35px;
 }
 
-.l-left {
-  padding-left: 111px;
-  padding-right: 80px;
-}
-
-.p-main-right {
-  width: 40%;
-  height: 1196px;
-}
-
-.l-main-maps {
+.l-main__maps {
   position: relative;
 }
 
-.p-mani-block {
+.p-mani__block {
   background-color: #707070;
   width: 61%;
   height: 452px;
@@ -121,7 +111,7 @@ table {
   opacity: 0.7;
 }
 
-.p-main-heading {
+.p-main__heading {
   position: absolute;
   top: 30px;
   left: 120px;
@@ -130,11 +120,11 @@ table {
   color: #ffffff;
 }
 
-.p-main-text {
+.p-main__text {
   position: absolute;
   top: 140px;
   left: 110px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   width: 500px;
   height: 400px;
@@ -146,25 +136,25 @@ table {
   background-color: bisque;
 }
 
-.p-sidber-title {
-  font-size: 34px;
+.p-sidber__title {
+  font-size: 2.1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   padding: 82px 235px 85px 45px;
 }
 
-.p-sidber-category {
+.p-sidber__category {
   font-size: 24px;
   font-weight: bold;
   padding: 217px 170px 40px 46px;
 }
 
-.p-sidber-menu {
+.p-sidber__menu {
   font-size: 20px;
   padding: 23px 121px 23px 66px;
 }
 
-.p-sidber-menu-menu {
+.p-sidber__menu__menu {
   padding-top: 37px;
 }
 
