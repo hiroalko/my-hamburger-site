@@ -3,15 +3,73 @@
   padding: 35px;
 }
 
-// .l-left {
-//   padding-left: 111px;
-//   padding-right: 80px;
-// }
+
 
 // .p-main-right {
 //   width: 40%;
 //   height: 1196px;
 // }
+.l-main__img__left{
+  position: relative;
+}
+.p-main__left{
+  position: relative;
+}
+
+.l-main__img__left h2{
+  position: absolute;
+  top: 50px;
+  left: 85px;
+}
+
+.p-box{
+  position: relative;
+}
+
+.p-main__right{
+  position: relative;
+  bottom: 1296px;
+  left: 700px;
+}
+
+.l-main__img h2{
+  position: absolute;
+  bottom: 2488px;
+  left: 790px;
+}
+.p-box{
+  position: relative;
+}
+// 文字サイズ　take out
+// バックカラー聞かない
+// bottomはなぜ使わない
+
+.p-box__take-out{
+  background-color: white;
+}
+.p-box__take-out h4{
+  position: absolute;
+  top: 50px;
+  left: 105px;
+}
+.p-box__take-out p{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+// スタイルが聞かない
+.p-box__take-out-out h4{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 105px;
+}
+.p-box__take-out-out p{
+    position: absolute;
+    z-index: 1;
+    bottom: 205px;
+}
+  
 
 .l-main__maps {
   position: relative;
@@ -46,3 +104,4 @@
   color: #ffffff;
   line-height: 30px;
 }
+
