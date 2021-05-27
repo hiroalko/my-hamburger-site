@@ -53,7 +53,7 @@ table {
 }
 
 .l-header {
-  display: flex;
+  width: 100%;
 }
 
 .p-header {
@@ -93,39 +93,31 @@ table {
   padding: 15px;
 }
 
+h2 {
+  font-size: 5rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
 .main {
   justify-content: space-between;
   padding: 35px;
 }
 
+.l-main__img-box01 {
+  display: flex;
+}
+
 .l-main__img__left {
-  position: relative;
+  background-image: url(/img/front-main1.png);
+  height: 1112px;
+  width: 555px;
 }
 
-.p-main__left {
-  position: relative;
-}
-
-.l-main__img__left h2 {
-  position: absolute;
-  top: 50px;
-  left: 85px;
-}
-
-.p-box {
-  position: relative;
-}
-
-.p-main__right {
-  position: relative;
-  bottom: 1296px;
-  left: 700px;
-}
-
-.l-main__img h2 {
-  position: absolute;
-  bottom: 2488px;
-  left: 790px;
+.l-main__img__right {
+  background-image: url(/img/front-main2.png);
+  height: 1112px;
+  width: 555px;
 }
 
 .p-box {
@@ -137,28 +129,7 @@ table {
 }
 
 .p-box__take-out h4 {
-  position: absolute;
-  top: 50px;
-  left: 105px;
-}
-
-.p-box__take-out p {
-  position: absolute;
-  top: 50px;
-  left: 100px;
-}
-
-.p-box__take-out-out h4 {
-  position: absolute;
-  z-index: 1;
-  top: 50px;
-  left: 105px;
-}
-
-.p-box__take-out-out p {
-  position: absolute;
-  z-index: 1;
-  bottom: 205px;
+  margin: 679px 370px 354px 39px;
 }
 
 .l-main__maps {
@@ -168,25 +139,16 @@ table {
 .p-mani__block {
   background-color: #707070;
   width: 61%;
-  height: 452px;
-  position: absolute;
-  top: 0;
   opacity: 0.7;
 }
 
 .p-main__heading {
-  position: absolute;
-  top: 30px;
-  left: 120px;
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
 }
 
 .p-main__text {
-  position: absolute;
-  top: 140px;
-  left: 110px;
   font-size: 1rem;
   font-weight: bold;
   width: 500px;
