@@ -61,7 +61,7 @@ table {
 }
 
 .p-header {
-  padding: 20px 15px;
+  padding: 19px 16px;
   background-color: bisque;
   justify-content: space-between;
   display: flex;
@@ -70,10 +70,16 @@ table {
 .p-header__title {
   text-align: center;
   vertical-align: middle;
-  margin-top: 5px;
+  margin-top: 1%;
   font-size: 4rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+}
+
+.p-header__form {
+  display: flex;
+  padding: 1%;
+  width: 50%;
 }
 
 .p-header__search {
@@ -85,16 +91,15 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 10px;
-  width: 396px;
-  height: 46px;
+  width: 73%;
+  padding-left: 3%;
   font-size: 1.5rem;
 }
 
 .p-header__submit {
-  border-radius: 10px;
-  width: 136px;
-  height: 46px;
-  padding: 15px;
+  border-radius: 10%;
+  width: 24%;
+  margin-left: 3%;
 }
 
 img {
@@ -115,7 +120,6 @@ h2 {
 
 .l-main__img-box {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 70px;
   box-sizing: border-box;
@@ -124,11 +128,13 @@ h2 {
 .l-main__img__left {
   background-image: url(/img/front-main1.png);
   width: 42%;
+  margin-right: 20px;
 }
 
 .l-main__img__right {
   background-image: url(/img/front-main2.png);
   width: 42%;
+  margin-left: 20px;
 }
 
 .p-box {
@@ -142,24 +148,26 @@ h2 {
 }
 
 .p-box__take-out h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 .l-main__maps {
+  top: 0px;
   position: relative;
-  top: 448px;
 }
 
 .l-main__maps iframe {
-  position: absolute;
   top: 89px;
 }
 
-.p-mani__block {
+.l-main__block {
   background-color: #707070;
   width: 61%;
+  position: absolute;
+  padding: 9%;
+  top: 1px;
   opacity: 0.7;
 }
 
@@ -172,33 +180,32 @@ h2 {
 .p-main__text {
   font-size: 1rem;
   font-weight: bold;
-  width: 500px;
-  height: 400px;
+  width: 100%;
   color: #ffffff;
   line-height: 30px;
 }
 
 .l-sidber {
   background-color: bisque;
-  width: 265px;
+  width: 27%;
 }
 
 .p-sidber__title {
   font-size: 2.1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  padding: 82px 235px 85px 45px;
+  padding: 45px 0px 35px 40px;
 }
 
 .p-sidber__category {
   font-size: 24px;
   font-weight: bold;
-  padding: 217px 170px 40px 46px;
+  padding: 0px 0px 40px 20px;
 }
 
 .p-sidber__menu {
-  font-size: 20px;
-  padding: 23px 121px 23px 66px;
+  font-size: 1.2rem;
+  padding: 45px 0px 25px 29px;
 }
 
 .p-sidber__menu__menu {

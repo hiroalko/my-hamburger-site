@@ -9,7 +9,7 @@
 }
 
 .p-header {
-    padding: 20px 15px;
+    padding: 19px 16px;
     background-color: bisque;
     justify-content: space-between;
     display: flex;
@@ -17,10 +17,16 @@
   .p-header__title {
     text-align: center;
     vertical-align: middle;
-    margin-top: 5px;
+    margin-top: 1%;
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+  }
+
+  .p-header__form{
+    display: flex;
+    padding: 1%;
+    width: 50%;
   }
 
   
@@ -33,21 +39,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border-radius: 10px;
-    width: 396px;
-    height: 46px;
+    width: 73%;
+    padding-left: 3%;
     font-size: 1.5rem;
   }
   
   .p-header__submit {
-    border-radius: 10px;
-    width: 136px;
-    height: 46px;
-    padding: 15px;
+    border-radius: 10%;
+    width: 24%;
+    margin-left: 3%;
   }
-  // .p-front__img{
-  //   justify-content: space-between;
-  //   padding: 35px;
-  // }
+  
 
   
   
