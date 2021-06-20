@@ -19,34 +19,118 @@
 
 <body>
     <div class="box">
-        <!--headerからmain,sidberまでのdivのくくりです-->
-        <div class="header">
-            <!--headerからmainまでの小さいくくりです-->
-            <header>
-                <div class="l-header">
-                    <!--top-content -->
-                    <div class="p-header">
-                        <!--p-header1-->
-                        <h1 class="p-header__title">Hamburger</h1>
-                        <!--p-header-title-->
-                        <!--p-header2-->
-                        <form class="p-header__form">
-                            <!--p-header3-->
-                            <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
-                            <!--"p-header-search-->
-                            <!--p-header4-->
-                            <input type="submit" name="submit" class="p-header__submit" value="検索">
-                            <!--p-header-submit-->
-                            <!--p-header5-->
-                        </form>
+        <div class="box__header">
+            <div class="header">
+                <header>
+                    <div class="l-header">
+                        <div class="p-header">
+                            <h1 class="p-header__title">Hamburger</h1>
+                            <form class="p-header__form">
+                                <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
+                                <input type="submit" name="submit" class="p-header__submit" value="検索">
+                            </form>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <main class="l-main">
+                <div class="l-main__title">
+                    <h3 p-main__subtitle>Menu:</h3>
+                    <h6 p-main__subtitle1>チーズバーガー</h6>
+
+                </div>
+                <div class="l-main__content">
+                    <div class="l-main__content--title">小見出しが入ります</div>
+                    <p class="l-main__content--text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <ul class="l-main__content--menu">
+                        <li class="menu__content">
+                            <div class="menu__content--img">
+                                <img src="/img/archive-main.png" alt="#">
+                            </div>
+                            <div class="menu__content--text">
+                                <h3>チーズバーガー</h3>
+                                <h4>小見出しが入ります</h4>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                <a href="#">詳しく見る</a>
+                            </div>
+                        </li>
+                        <li class="menu__content">
+                            <div class="menu__content--img">
+                                <img src="/img/archive-main.png" alt="#">
+                            </div>
+                            <div class="menu__content--text">
+                                <h3>ダブルチーズバーガー</h3>
+                                <h4>小見出しが入ります</h4>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                <a href="#">詳しく見る</a>
+                            </div>
+                        </li>
+                        <li class="menu__content">
+                            <div class="menu__content--img">
+                                <img src="/img/archive-main.png" alt="#">
+                            </div>
+                            <div class="menu__content--text">
+                                <h3>スペシャルチーズバーガー</h3>
+                                <h4>小見出しが入ります</h4>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                <a href="#">詳しく見る</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-pagenation">
+                        <ul>
+                            <li>page 1/10</li>
+                            <li class="this">&lt;&lt;</li>
+                            <li><a href="/html/archive.html">1</a></li>
+                            <li><a href="/html/archive.html">2</a></li>
+                            <li><a href="/html/archive.html">3</a></li>
+                            <li><a href="/html/archive.html">4</a></li>
+                            <li><a href="/html/archive.html">5</a></li>
+                            <li><a href="/html/archive.html">6</a></li>
+                            <li><a href="/html/archive.html">7</a></li>
+                            <li><a href="/html/archive.html">8</a></li>
+                            <li><a href="/html/archive.html">9</a></li>
+                            <li class="this">&gt;&gt;</li>
+                        </ul>
                     </div>
                 </div>
-            </header>
+            </main>
+        </div>
+        <div class="l-sidber">
+            <h2 class="p-sidber__title">Menu</h2>
+            <p class="p-sidber__category">ハンバーガー</p>
+            <ul>
+                <li class="p-sidber__menu l-sidber__menu__menu">ハンバーガー</li>
+                <li class="p-sidber__menu">チーズバーガー</li>
+                <li class="p-sidber__menu">テリヤキバーガー</li>
+                <li class="p-sidber__menu">アボガドバーガー</li>
+                <li class="p-sidber__menu">フィッシュバーガー</li>
+                <li class="p-sidber__menu">ベーコンバーガー</li>
+                <li class="p-sidber__menu">チキンバーガー</li>
+            </ul>
+            <p class="p-sidber__category">サイド</p>
+            <ul>
+                <li class="p-sidber__menu">ポテト</li>
+                <li class="p-sidber__menu">サラダ</li>
+                <li class="p-sidber__menu">ナゲット</li>
+                <li class="p-sidber__menu">コーン</li>
+            </ul>
+            <p class="p-sidber__category">ドリンク</p>
+            <ul>
+                <li class="p-sidber__menu">コーラ</li>
+                <li class="p-sidber__menu">ファンタ</li>
+                <li class="p-sidber__menu">オレンジ</li>
+                <li class="p-sidber__menu">アップル</li>
+                <li class="p-sidber__menu">紅茶（ice/hot)</li>
+                <li class="p-sidber__menu">コーヒー(ice/hot)</li>
+            </ul>
         </div>
     </div>
-    <main class="l-main">
-        <div class=""></div>
-    </main>
+    </div>
+    <footer class="l-footer">
+        <img src="/img/pc_footer.png" alt="#">
+    </footer>
+    
 
 
 </body>
