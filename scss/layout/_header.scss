@@ -13,12 +13,11 @@
 }
 
 .p-header {
-    padding: 19px 16px;
-    background-color: bisque;
-    justify-content: space-between;
-    display: flex;
-  }
-  .p-header__title {
+  padding: 19px 16px;
+  background-color: bisque;
+  justify-content: space-between;
+  display: flex;
+  &__title {
     text-align: center;
     vertical-align: middle;
     margin-top: 1%;
@@ -26,15 +25,12 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
   }
-
-  .p-header__form{
+  &__form{
     display: flex;
     padding: 1%;
     width: 50%;
   }
-
-  
-  .p-header__search {
+  &__search {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -47,12 +43,20 @@
     padding-left: 3%;
     font-size: 1.5rem;
   }
-  
-  .p-header__submit {
+  &__submit {
     border-radius: 10%;
     width: 24%;
     margin-left: 3%;
   }
+}
+  
+
+ 
+
+  
+  
+  
+  
   
 
   
