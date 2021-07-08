@@ -13,21 +13,39 @@ h2{
   justify-content: space-between;
   padding: 35px;
 }
-
+.p-front__main{
+  width: 80vw;
+  height: auto;
+  @include sp{
+    width: 100%;
+  }
+}
 .l-main__img-box {
   display: flex;
   width: 100%;
   padding: 70px;
   box-sizing: border-box;
-  &__left{
+  @include sp{
+    padding: 20px;
+    display: inline-block;
+  }
+  .l-main__img__left{
     background-image: url(/img/front-main1.png);
     width: 42%;
     margin-right: 20px;
+    @include sp{
+      width: 81%;
+      margin-left: 18px;
+    }
   }
-  &__right{
+  .l-main__img__right{
     background-image: url(/img/front-main2.png);
     width: 42%;
     margin-left: 20px;
+    @include sp{
+      width: 81%;
+      margin-top: 20px;
+    }
   }
 }
 
@@ -65,13 +83,17 @@ h2{
   iframe{
     top: 89px;
   }
-  &__block {
-    background-color: #707070;
-    width: 61%;
-    position: absolute;
-    padding: 9%;
-    top: 1px;
-    opacity: 0.7;
+}
+
+.l-main__block {
+  background-color: #707070;
+  width: 61%;
+  position: absolute;
+  padding: 9%;
+  top: 1px;
+  opacity: 0.7;
+  @include sp{
+    padding: 2%;
   }
 }
 
@@ -81,15 +103,15 @@ h2{
   font-size: 36px;
   font-weight: bold;
   color: #ffffff;
-  &__text {
-    font-size: 1rem;
-    font-weight: bold;
-    width: 100%;
-    color: #ffffff;
-    line-height: 30px;
-  }
+  
 }
-
+.p-main__text {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  color: #ffffff;
+  line-height: 30px;
+}
 
 
 
@@ -99,42 +121,75 @@ h2{
 
 .l-main__title{
   height: 239px;
+  width: 82vw;
   background-image: url(/img/archive-img.png);
   display: flex;
   align-items: center;
+  @include sp{
+    width: 100%;
+  }
   h3{
     font-size: 3.7rem;
     font-weight: bold;
     margin-left: 100px;
+    @include sp{
+      position: absolute;
+      top: 316px;
+      right: 434px;
+      font-size: 2.25rem;
+    }
   }
   h6{
     font-size: 1rem;
     font-weight: bold;
+    @include sp{
+      position: absolute;
+      top: 373px;
+      left: 50px;
+    }
   }
   
 }
-
-
-
-.l-main__content__title{
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-top: 60px;
-  margin-left: 100px;
+.l-main__content{
+  margin: 0 100px;
+  @include sp{
+    margin: 30px 100px 30px 22px;
+  }
+  &__title{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 100px;
+    @include sp{
+      font-size: 1.75rem;
+      margin-top: 30px;
+     
+    }
+  }
   &__text{
     font-size: 1rem;
-    margin: 25px 0 70px 100px;
-    // marginbottom効かない
-    
+    line-height: 1.2;
+    margin-top: 20px;
+    @include sp{
+      margin: 30px 18px 19px 22px;
+      line-height: 1.5;
+    }
   }
 }
+
+
+
+
 
 
 .menu__content{
   display: flex;
-  margin: 70px 30px
+  margin: 70px 30px;
+  @include sp{
+   flex-direction: column;
+  }
 }
- &__img{
+ .menu__content__img{
    flex: 1;
  }
 //  &__img sass効かない
@@ -144,11 +199,17 @@ h2{
   background-color: #3C2B1C;
   padding-left: 63px;
   flex: 1;
+  @include sp{
+    padding-left: 22px;
+ }
   h3{
     font-size: 2.2rem;
     font-weight: bold;
     color: white;
     margin-top: 53px;
+    @include sp{
+      font-size: 1.25rem;
+    }
     
   }
   h4{
@@ -156,6 +217,9 @@ h2{
     font-weight: bold;
     color: white;
     margin-top: 47px;
+    @include sp{
+      font-size: 1rem;
+    }
   }
   p{
     font-size: 1rem;
@@ -178,6 +242,9 @@ h2{
     margin-top: 20px;
     position: relative;
     left: 95px;
+    @include sp{
+      margin-bottom: 70px;
+    }
   }
 }
 .p-pagenation{
@@ -202,14 +269,21 @@ h2{
 
 .l-main__single__title{
   background-image: url(/img/single-header.png);
-  width: 100%;
+  width: 87vw;
   height: 490px;
   display: flex;
   align-items: center;
+  @include sp{
+    width: 100%;
+  }
   h1{
     font-size: 3.7rem;
     font-weight: bold;
     color: white;
+    @include sp{
+      font-size: 2.25rem;
+      padding-left: 26px;
+    }
   }
 }
 
@@ -220,6 +294,9 @@ h2{
       font-weight: bold;
       padding-top: 15px;
       margin-top: 60px;
+      @include sp{
+        font-size: 1.75rem;
+      }
       }
       p{
         font-size: 1rem;
@@ -231,6 +308,9 @@ h2{
       margin-top: 60px;
       font-size: 1.7rem;
       font-weight: bold;
+      @include sp{
+        font-size: 1.5rem;
+      }
     }
     h4{
       margin-top: 60px;
@@ -254,19 +334,28 @@ h2{
     display: flex;
     padding-top: 60px;
   }
-  &__list__light{
+  .p-picture__list__light{
     display: flex;
     flex-direction: row-reverse;
     padding-top: 60px;
   }
 
-  &__column{
+  .p-picture__column{
     width: 50%;
-    &__txt{
-      width: 50%;
-      font-size: 1rem;
-      font-weight: normal;
-      line-height: 1.3;
+    @include sp{
+      height: 89px;
+      width: 144px;
+    }
+  }
+
+  .p-picture__txt{
+    width: 50%;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.3;
+    @include sp{
+      height: 89px;
+      width: 144px;
     }
   }
   
@@ -288,6 +377,11 @@ h2{
   display: grid;
   grid-template-columns: 320px 320px 320px;
   gap: 10px;
+  margin-left: 77px;
+  @include sp{
+    width: 75%;
+    display: block;
+  }
 }
 
 .p-article__list li{
@@ -300,12 +394,12 @@ h2{
   padding-left: 150px;
 }
 
-&__list2{
+.p-article__list2{
   padding: 20px 20px;
   padding-left: 168px;
 }
 
-&__list3{
+.p-article__list3{
   padding: 20px 60px;
   padding-left: 150px;
   list-style: none;
@@ -327,15 +421,16 @@ table{
  td, th{
   border: 1px solid black;
   padding: 8px;
- 
+  text-align: left;
 }}
 
 .table__th{
   width: 30%;
   padding: 8px;
+  text-align: left;
 }
 
-&__td1{
+.table__td1{
   width: 70%;
   padding: 8px;
 }
@@ -356,6 +451,9 @@ table{
   height: 104px;
   border-radius: 20px;
   margin-bottom: 60px;
+  @include sp{
+    width: 100%;
+  }
 }
 
 .c-site__bold{
@@ -368,7 +466,7 @@ table{
 
 .l-main__page__title{
   background-image: url(/img/page-header.png);
-  width: 100%;
+  width: 87vw;
   height: 490px;
   display: flex;
   align-items: center;

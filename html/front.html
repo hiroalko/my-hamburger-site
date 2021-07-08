@@ -18,18 +18,18 @@
 </head>
 
 <body>
-    <div class="box">
-        <div class="header">
-            <header>
-                <div class="l-header">
-                    <div class="p-header">
-                        <h1 class="p-header__title">Hamburger</h1>
-                        <form class="p-header__form">
-                            <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
-                            <input type="submit" name="submit" class="p-header__submit" value="検索">
-                        </form>
-                    </div>
+    <div class="l-wrapper">
+        <div class="l-description">
+            <!-- mainの終わりまでの大きなくくり消したらdisplay:flexが崩れる何もデザインが当たってないから消したのになぜ -->
+            <header class="l-header">
+                <div class="p-header">
+                    <h1 class="p-header__title">Hamburger</h1>
+                    <form class="p-header__form">
+                        <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
+                        <input type="submit" name="submit" class="p-header__submit" value="検索">
+                    </form>
                 </div>
+               
             </header>
             <main class="l-main">
                 <p><img src="/img/front-header.png" alt="#" class="p-front__main"></p>
@@ -76,10 +76,10 @@
                         </p>
                     </div>
                 </div>
-    </div>
+        </div>
         </main>
         <div class="l-sideber">
-             <h2 class="p-sideber__title">Menu</h2>
+            <h2 class="p-sideber__title">Menu</h2>
             <p class="p-sideber__category">ハンバーガー</p>
             <ul>
                 <li class="p-sideber__menu l-sideber__menu__menu">ハンバーガー</li>
@@ -90,8 +90,8 @@
                 <li class="p-sideber__menu">ベーコンバーガー</li>
                 <li class="p-sideber__menu">チキンバーガー</li>
             </ul>
-            <p class="p-sidber__category">サイド</p>
-      
+            <p class="p-sideber__category">サイド</p>
+
             <ul>
                 <li class="p-sideber__menu">ポテト</li>
                 <li class="p-sideber__menu">サラダ</li>

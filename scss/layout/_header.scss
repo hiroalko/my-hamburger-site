@@ -1,36 +1,50 @@
 // header,footer,.l-が頭文字にくる
 
-.box{
+.l-wrapper{
   display: flex;
 }
 
-.box__header{
-  flex: 1;
-}
+// .box__header{
+//   flex: 1;
+// }
 
 .l-header{
   width: 100%;
+  
 }
 
-.p-header {
+.p-header{
   padding: 19px 16px;
   background-color: bisque;
   justify-content: space-between;
   display: flex;
-  &__title {
+  @include sp{
+    padding: 20px 0 40px;
+    flex-direction: column;
+  }
+}
+
+.p-header__title {
     text-align: center;
     vertical-align: middle;
     margin-top: 1%;
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-  }
-  &__form{
+    @include sp{
+      margin-bottom: 38px;
+    }
+}
+    .p-header__form{
     display: flex;
     padding: 1%;
     width: 50%;
-  }
-  &__search {
+    @include sp{
+      display: inlineblock;
+      margin: 0 auto;
+    }
+    }
+  .p-header__search {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -43,12 +57,13 @@
     padding-left: 3%;
     font-size: 1.5rem;
   }
-  &__submit {
+  .p-header__submit {
     border-radius: 10%;
     width: 24%;
     margin-left: 3%;
   }
-}
+  
+
   
 
  
