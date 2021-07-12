@@ -1,1 +1,13 @@
 // .c-buttonのクラス名　再利用できる最小限のパーツどの案件にも使えます
+.c-site__btn button{
+    width: 30%;
+    height: 104px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    a{
+      text-decoration: none;
+    }
+    @include sp{
+      width: 100%;
+    }
+  }

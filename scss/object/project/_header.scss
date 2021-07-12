@@ -1,0 +1,57 @@
+// .p-rankingのクラス名　サイト固有のまとまりを定義してパターン化するパーツ。案件に応じて追加していくパーツです。
+.p-header{
+    padding: 19px 16px;
+    background-color: bisque;
+    justify-content: space-between;
+    display: flex;
+    @include sp{
+      padding: 20px 0 40px;
+      flex-direction: column;
+    }
+  }
+  
+  .p-header__title {
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 1%;
+      font-size: 4rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      @include sp{
+        margin-bottom: 38px;
+      }
+  }
+      .p-header__form{
+      display: flex;
+      padding: 1%;
+      width: 50%;
+      @include sp{
+        display: inlineblock;
+        margin: 0 auto;
+      }
+      }
+    .p-header__search {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      border-radius: 0.6rem;
+      width: 73%;
+      padding-left: 3%;
+      font-size: 1.5rem;
+      border: 1px solid #333;
+      height: 46px;
+      margin-top: 8px;
+    }
+    .p-header__submit {
+      border-radius: 0.6rem;
+      width: 24%;
+      margin-left: 3%;
+      border: 1px solid #333;
+      height: 46px;
+      margin-top: 8px;
+    }
+    
