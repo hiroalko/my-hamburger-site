@@ -85,8 +85,8 @@ h2{
     margin-left: 100px;
     @include sp{
       position: absolute;
-      top: 316px;
-      right: 434px;
+      top: 358px;
+      right: 360px;
       font-size: 2.25rem;
     }
   }
@@ -95,8 +95,8 @@ h2{
     font-weight: bold;
     @include sp{
       position: absolute;
-      top: 373px;
-      left: 50px;
+      top: 401px;
+      left: 76px;
     }
   }
   
@@ -104,7 +104,7 @@ h2{
 .l-main__content{
   margin: 0 100px;
   @include sp{
-    margin: 30px 100px 30px 22px;
+    margin: 30px 20px 30px 20px;
   }
   &__title{
     font-size: 2.2rem;
@@ -134,16 +134,24 @@ h2{
 
 .menu__content{
   display: flex;
-  margin: 70px 30px;
+  margin-top: 30px;
   @include sp{
    flex-direction: column;
+   margin-top: 21px ;
   }
 }
  .menu__content__img{
-   flex: 1;
-   img{
-     height: 397px;
+   width: 50%;
+   box-sizing: border-box;
+   @include sp{
+     width: 85%;
    }
+  img{
+      height: 100%;
+      @include sp{
+      margin-left: 40px;
+    }
+  }
  }
 //  &__img sass効かない
  
@@ -151,9 +159,13 @@ h2{
 .menu__content__text{
   background-color: #3C2B1C;
   padding-left: 33px;
-  flex: 1;
+  padding-right: 45px;
+  width: 50%;
+  box-sizing: border-box;
   @include sp{
     padding-left: 22px;
+    width: 85%;
+    margin-left: 40px;
  }
   h3{
     font-size: 2.2rem;
@@ -179,7 +191,8 @@ h2{
     color: white;
     margin-top: 17px;
     margin-bottom: 60px;
-    padding-right: 5px
+    padding-right: 5px;
+    line-height: 1.4;
   }
   a{
     text-decoration: none;
@@ -225,6 +238,7 @@ h2{
     font-size: 3.7rem;
     font-weight: bold;
     color: white;
+    margin-left: 10px;
     @include sp{
       font-size: 2.25rem;
       padding-left: 26px;

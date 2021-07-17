@@ -60,8 +60,14 @@ table {
   width: 100%;
 }
 
-.l-description__single {
-  width: 86%;
+.l-description {
+  width: 75%;
+}
+
+@media (max-width: 599px) {
+  .l-description {
+    width: 100%;
+  }
 }
 
 img {
@@ -167,8 +173,8 @@ h2 {
 @media (max-width: 599px) {
   .l-main__title h3 {
     position: absolute;
-    top: 316px;
-    right: 434px;
+    top: 358px;
+    right: 360px;
     font-size: 2.25rem;
   }
 }
@@ -181,8 +187,8 @@ h2 {
 @media (max-width: 599px) {
   .l-main__title h6 {
     position: absolute;
-    top: 373px;
-    left: 50px;
+    top: 401px;
+    left: 76px;
   }
 }
 
@@ -192,7 +198,7 @@ h2 {
 
 @media (max-width: 599px) {
   .l-main__content {
-    margin: 30px 100px 30px 22px;
+    margin: 30px 20px 30px 20px;
   }
 }
 
@@ -224,32 +230,50 @@ h2 {
 
 .menu__content {
   display: flex;
-  margin: 70px 30px;
+  margin-top: 30px;
 }
 
 @media (max-width: 599px) {
   .menu__content {
     flex-direction: column;
+    margin-top: 21px;
   }
 }
 
 .menu__content__img {
-  flex: 1;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .menu__content__img {
+    width: 85%;
+  }
 }
 
 .menu__content__img img {
-  height: 397px;
+  height: 100%;
+}
+
+@media (max-width: 599px) {
+  .menu__content__img img {
+    margin-left: 40px;
+  }
 }
 
 .menu__content__text {
   background-color: #3C2B1C;
   padding-left: 33px;
-  flex: 1;
+  padding-right: 45px;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 599px) {
   .menu__content__text {
     padding-left: 22px;
+    width: 85%;
+    margin-left: 40px;
   }
 }
 
@@ -285,6 +309,7 @@ h2 {
   margin-top: 17px;
   margin-bottom: 60px;
   padding-right: 5px;
+  line-height: 1.4;
 }
 
 .menu__content__text a {
@@ -334,6 +359,7 @@ h2 {
   font-size: 3.7rem;
   font-weight: bold;
   color: white;
+  margin-left: 10px;
 }
 
 @media (max-width: 599px) {
@@ -380,20 +406,66 @@ table td, table th {
   color: white;
 }
 
-.l-sideber {
+.l-sidebar {
   background-color: #F2EDE9;
-  width: 70%;
+  width: 25%;
 }
 
 @media (max-width: 599px) {
-  .l-sideber {
+  .l-sidebar {
     display: none;
+  }
+  .l-sidebar.active {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
   }
 }
 
-.footer {
+.l-footer {
+  width: 100%;
+  height: 150px;
+  background-color: #9D8670;
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+
+.l-footer__section {
+  padding-top: 43px;
+}
+
+.l-footer__section a {
+  color: #fff;
+  font-size: 20px;
+  padding: 43px 10px;
+}
+
+.l-footer__section a:last-of-type {
+  position: relative;
+}
+
+.l-footer__section a:last-of-type::before {
+  position: absolute;
+  left: -3px;
+  content: "";
+  background-color: #fff;
+  width: 2px;
+  height: 20px;
+}
+
+.l-footer p {
+  padding-top: 39px;
+}
+
+.l-footer p small {
+  color: #fff;
+  font-size: 14px;
 }
 
 .c-site__btn button {
@@ -405,6 +477,7 @@ table td, table th {
 
 .c-site__btn button a {
   text-decoration: none;
+  color: #3C2A10;
 }
 
 @media (max-width: 599px) {
@@ -455,6 +528,22 @@ table td, table th {
 @media (max-width: 599px) {
   .p-header__title {
     margin-bottom: 38px;
+  }
+}
+
+.p-header__ps-title {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .p-header__ps-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    top: -115px;
+    right: 26px;
+    text-align: end;
   }
 }
 
@@ -541,8 +630,8 @@ table td, table th {
 .p-pagenation {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: -28px;
+  margin-top: 150px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 599px) {
@@ -566,7 +655,16 @@ table td, table th {
 @media (max-width: 599px) {
   .p-pagenation__pc {
     display: flex;
-    justify-content: space-between;
+    margin: 60px 0 31px;
+  }
+  .p-pagenation__pc ul {
+    display: flex;
+  }
+  .p-pagenation__pc .pre {
+    padding-left: 51px;
+  }
+  .p-pagenation__pc .pre1 {
+    padding-left: 320px;
   }
 }
 
@@ -716,26 +814,26 @@ table td, table th {
   list-style: none;
 }
 
-.p-sideber__title {
+.p-sidebar__title {
   font-size: 2.1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   padding: 45px 0px 35px 40px;
 }
 
-.p-sideber__category {
+.p-sidebar__category {
   font-size: 24px;
   font-weight: bold;
   margin-top: 40px;
   padding: 0px 0px 40px 20px;
 }
 
-.p-sideber__menu {
+.p-sidebar__menu {
   font-size: 1.2rem;
   padding: 45px 0px 25px 29px;
 }
 
-.p-sideber__menu__menu {
+.p-sidebar__menu__menu {
   padding-top: 37px;
 }
 /*# sourceMappingURL=style.css.map */

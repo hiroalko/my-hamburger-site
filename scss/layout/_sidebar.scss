@@ -1,8 +1,18 @@
-.l-sideber {
+.l-sidebar {
   background-color: #F2EDE9;
-  width: 70%;
+  width: 25%;
   @include sp{
     display: none;
+    &.active{
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
   }
   
 }

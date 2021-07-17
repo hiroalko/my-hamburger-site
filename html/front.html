@@ -23,6 +23,7 @@
             <header class="l-header">
                 <div class="p-header">
                     <h1 class="p-header__title">Hamburger</h1>
+                    <h2 class="p-header__ps-title">Menu</h2>
                     <form class="p-header__form">
                         <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
                         <input type="submit" name="submit" class="p-header__submit" value="検索">
@@ -77,42 +78,54 @@
                 </div>
         </div>
         </main>
-        <div class="l-sideber">
-            <h2 class="p-sideber__title">Menu</h2>
-            <p class="p-sideber__category">ハンバーガー</p>
+        <div class="l-sidebar">
+            <h2 class="p-sidebar__title">Menu</h2>
+            <p class="p-sidebar__category">ハンバーガー</p>
             <ul>
-                <li class="p-sideber__menu l-sideber__menu__menu">ハンバーガー</li>
-                <li class="p-sideber__menu">チーズバーガー</li>
-                <li class="p-sideber__menu">テリヤキバーガー</li>
-                <li class="p-sideber__menu">アボガドバーガー</li>
-                <li class="p-sideber__menu">フィッシュバーガー</li>
-                <li class="p-sideber__menu">ベーコンバーガー</li>
-                <li class="p-sideber__menu">チキンバーガー</li>
+                <li class="p-sidebar__menu l-sidebr__menu__menu">ハンバーガー</li>
+                <li class="p-sidebar__menu">チーズバーガー</li>
+                <li class="p-sidebar__menu">テリヤキバーガー</li>
+                <li class="p-sidebar__menu">アボガドバーガー</li>
+                <li class="p-sidebar__menu">フィッシュバーガー</li>
+                <li class="p-sidebar__menu">ベーコンバーガー</li>
+                <li class="p-sidebar__menu">チキンバーガー</li>
             </ul>
-            <p class="p-sideber__category">サイド</p>
+            <p class="p-sidebar__category">サイド</p>
 
             <ul>
-                <li class="p-sideber__menu">ポテト</li>
-                <li class="p-sideber__menu">サラダ</li>
-                <li class="p-sideber__menu">ナゲット</li>
-                <li class="p-sideber__menu">コーン</li>
+                <li class="p-sidebar__menu">ポテト</li>
+                <li class="p-sidebar__menu">サラダ</li>
+                <li class="p-sidebar__menu">ナゲット</li>
+                <li class="p-sidebar__menu">コーン</li>
             </ul>
-            <p class="p-sideber__category">ドリンク</p>
+            <p class="p-sidebar__category">ドリンク</p>
             <ul>
-                <li class="p-sideber__menu">コーラ</li>
-                <li class="p-sideber__menu">ファンタ</li>
-                <li class="p-sideber__menu">オレンジ</li>
-                <li class="p-sideber__menu">アップル</li>
-                <li class="p-sideber__menu">紅茶（ice/hot)</li>
-                <li class="p-sideber__menu">コーヒー(ice/hot)</li>
+                <li class="p-sidebar__menu">コーラ</li>
+                <li class="p-sidebar__menu">ファンタ</li>
+                <li class="p-sidebar__menu">オレンジ</li>
+                <li class="p-sidebar__menu">アップル</li>
+                <li class="p-sidebar__menu">紅茶（ice/hot)</li>
+                <li class="p-sidebar__menu">コーヒー(ice/hot)</li>
             </ul>
         </div>
     </div>
     <footer class="l-footer">
-        <img src="/img/pc_footer.png" alt="#">
+        <div class="l-footer__section">
+            <a href="/html/page.html">ショップ情報</a>
+            <a href="/html/page.html">ヒストリー</a>
+        </div>
+        <p> 
+            <small>Copyright : RaiseTech</small>
+        </p>
     </footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       $('.p-header__ps-title').on('click',function(){
+        $('.l-sidebar').toggleClass('active');
+       
+});
+    </script>
 </body>
 
 </html>

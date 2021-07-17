@@ -21,6 +21,18 @@
         margin-bottom: 38px;
       }
   }
+  .p-header__ps-title{
+    display: none;
+    @include sp{
+      font-size: 1.25rem;
+      font-weight: bold;
+      display: block;
+      position: relative;
+      top: -115px;
+      right: 26px;
+      text-align: end;
+    }
+  }
       .p-header__form{
       display: flex;
       padding: 1%;
