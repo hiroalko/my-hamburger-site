@@ -3,7 +3,12 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 45px 0px 35px 40px;
-    
+    @include tab{
+      display: none;
+    } 
+    @include sp{
+      display: none;
+    }
   }
   
   .p-sidebar__category{

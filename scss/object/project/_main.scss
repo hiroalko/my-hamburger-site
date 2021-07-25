@@ -22,6 +22,7 @@
     font-size: 36px;
     font-weight: bold;
     color: #ffffff;
+    line-height: 2;
     
   }
   .p-main__text {
@@ -29,7 +30,7 @@
     font-weight: bold;
     width: 100%;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 35px;
   }
   //archive//
 
@@ -91,12 +92,16 @@
         font-weight: bold;
         @include sp{
           font-size: 1.5rem;
+          margin-left: 20px;
         }
       }
       h4{
         margin-top: 60px;
         font-weight: bold;
         font-size: 1.2rem;
+        @include tab{
+          margin-left: 20px;
+        }
       }
      
       } 
@@ -110,6 +115,14 @@
         padding-top: 60px;
         padding-bottom: 60px;
       }
+      }
+      .p-picture img{
+        @include tab{
+          margin-top: 60px;
+        }
+        @include sp{
+          margin-top: 30px;
+        }
       }
       .p-picture__list {
         display: flex;
@@ -125,7 +138,7 @@
         width: 50%;
         @include sp{
           height: 89px;
-          width: 144px;
+          width: 45%;
         }
       }
 
@@ -135,9 +148,12 @@
         font-weight: normal;
         line-height: 1.3;
         margin-left: 40px;
+        @include tab{
+          margin-left: 21px;
+          line-height: 1.4;
+        }
         @include sp{
-          height: 89px;
-          width: 144px;
+          line-height: 1.3;
         }
       }
       .p-picture__txt2{
@@ -146,6 +162,10 @@
         font-weight: normal;
         line-height: 1.3;
         margin-right: 40px;
+        @include tab{
+          margin-right: 21px;
+          line-height: 1.4;
+        }
       }
       
       .p-picture__column__bottom{
@@ -163,10 +183,31 @@
         display: grid;
         grid-template-columns: 320px 320px 320px;
         gap: 10px;
-        margin-left: 30px;
+        margin-left: -72px;
+        @include tab{
+          display: grid;
+          grid-template-columns: 1fr 1fr; 
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 10px;
+          margin-left: 57px;
+          margin-top: 241px;
+        }
         @include sp{
           width: 75%;
           display: block;
+          margin-left: 36px;
+        }
+        &__item{
+          height: 205px;
+          object-fit: cover;
+          @include tab{
+            width: 450px;
+            height: 205px;
+            object-fit: cover;
+          }
+          @include sp{
+            margin-top: 20px;
+          }
         }
       }
       

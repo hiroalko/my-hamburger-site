@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
     <link rel="stylesheet" href="/scss/reset.css">
     <link rel="stylesheet" href="/scss/style.css">
     <title>hamburgersite</title>
@@ -23,7 +24,7 @@
             <header class="l-header">
                 <div class="p-header">
                     <h1 class="p-header__title">Hamburger</h1>
-                    <h2 class="p-header__ps-title">Menu</h2>
+                    <h2 class="p-header__sp-title">Menu</h2>
                     <form class="p-header__form">
                         <input type="search" name="search" class="p-header__search" placeholder="&#xf002;">
                         <input type="submit" name="submit" class="p-header__submit" value="検索">
@@ -146,6 +147,7 @@
             </main>
         </div>
         <div class="l-sidebar">
+            <span class="batsu"></span>
             <h2 class="p-sidebar__title">Menu</h2>
             <p class="p-sidebar__category">ハンバーガー</p>
             <ul>
@@ -185,8 +187,18 @@
             <small>Copyright : RaiseTech</small>
         </p>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('.p-header__sp-title').on('click',function(){
+            $('.l-sidebar').toggleClass('active');
+        });
+        // 押したらサイドバーが現れる
+        $('.batsu').click(function() {
+            $('.l-sidebar').toggleClass('active');
+        });
+        // 押したらサイドバーが消える
+    </script>
 
 </body>
 
-</html>ƒ
+</html>

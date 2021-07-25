@@ -4,9 +4,14 @@
     background-color: bisque;
     justify-content: space-between;
     display: flex;
+    @include tab{
+      position: relative;
+      padding: 120px 16px;
+    }
     @include sp{
-      padding: 20px 0 40px;
+      padding:98px 0;
       flex-direction: column;
+      position: relative;
     }
   }
   
@@ -17,29 +22,113 @@
       font-size: 4rem;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
+      @include tab{
+        position: absolute;
+        top: 50px;
+        left: 428px;
+    }
       @include sp{
         margin-bottom: 38px;
+        top: 30px;
+        left: 117px;
       }
-  }
-  .p-header__ps-title{
+
+      }
+      
+  
+  .p-header__sp-title{
     display: none;
+    @include tab{
+      display: block;
+      font-size: 1.25rem;
+      position: absolute;
+      right: 18px;
+      top: 14px;
+    }
     @include sp{
       font-size: 1.25rem;
       font-weight: bold;
       display: block;
-      position: relative;
-      top: -115px;
-      right: 26px;
-      text-align: end;
+      position: absolute;
+      top: 14px;
+      left: 480px;
+      
     }
   }
+  .batsu{
+    display: none;
+    @include tab{
+      display: block;
+      width: 50px;/*枠の大きさ*/
+      height: 50px;/*枠の大きさ*/
+      position: relative;
+      margin: 0 0 0 auto;
+      &::before, &::after{
+        content: "";
+        display: block;
+        width: 100%;/*バツ線の長さ*/
+        height: 10px;/*バツ線の太さ*/
+        background: #000;
+        transform: rotate(45deg);
+        transform-origin:0% 50%;
+        position: absolute;
+        top: calc(14% - 5px);
+        left: 14%;
+    }
+    
+    &::after{
+        transform: rotate(-45deg);
+        transform-origin:100% 50%;
+        left: auto;
+        right: 14%;
+    }
+  }
+    @include sp{
+        display: block;
+        width: 50px;/*枠の大きさ*/
+        height: 50px;/*枠の大きさ*/
+        position: relative;
+        top: 9px;
+        left: 490px;
+        &::before, &::after{
+          content: "";
+          display: block;
+          width: 100%;/*バツ線の長さ*/
+          height: 10px;/*バツ線の太さ*/
+          background: #000;
+          transform: rotate(45deg);
+          transform-origin:0% 50%;
+          position: absolute;
+          top: calc(14% - 5px);
+          left: 14%;
+      }
+      
+      &::after{
+          transform: rotate(-45deg);
+          transform-origin:100% 50%;
+          left: auto;
+          right: 14%;
+      }
+    }
+  
+    
+   
+  }
+  
       .p-header__form{
       display: flex;
       padding: 1%;
       width: 50%;
+      @include tab{
+        position: absolute;
+        top: 142px;
+        left: 328px;
+      }
+     
       @include sp{
-        display: inlineblock;
-        margin: 0 auto;
+        position: absolute;
+        top: 113px;
+        left: 140px;
       }
       }
     .p-header__search {
@@ -66,4 +155,6 @@
       height: 46px;
       margin-top: 8px;
     }
+    
+
     
