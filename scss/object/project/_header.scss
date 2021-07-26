@@ -25,7 +25,7 @@
       @include tab{
         position: absolute;
         top: 50px;
-        left: 428px;
+        left: 212px;
     }
       @include sp{
         margin-bottom: 38px;
@@ -90,6 +90,7 @@
         position: relative;
         top: 9px;
         left: 490px;
+        margin: 1px;
         &::before, &::after{
           content: "";
           display: block;
@@ -122,7 +123,7 @@
       @include tab{
         position: absolute;
         top: 142px;
-        left: 328px;
+        left: 200px;
       }
      
       @include sp{

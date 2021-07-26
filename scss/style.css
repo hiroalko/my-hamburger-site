@@ -618,7 +618,7 @@ table td, table th {
   .p-header__title {
     position: absolute;
     top: 50px;
-    left: 428px;
+    left: 212px;
   }
 }
 
@@ -701,6 +701,7 @@ table td, table th {
     position: relative;
     top: 9px;
     left: 490px;
+    margin: 1px;
   }
   .batsu::before, .batsu::after {
     content: "";
@@ -734,7 +735,7 @@ table td, table th {
   .p-header__form {
     position: absolute;
     top: 142px;
-    left: 328px;
+    left: 200px;
   }
 }
 
@@ -1014,6 +1015,7 @@ table td, table th {
     grid-gap: 10px;
     margin-left: 57px;
     margin-top: 241px;
+    width: 390px;
   }
 }
 
@@ -1021,7 +1023,7 @@ table td, table th {
   .p-picture__title {
     width: 75%;
     display: block;
-    margin-left: 36px;
+    margin-left: 1px;
   }
 }
 
@@ -1032,7 +1034,6 @@ table td, table th {
 
 @media (max-width: 1200px) {
   .p-picture__title__item {
-    width: 450px;
     height: 205px;
     object-fit: cover;
   }

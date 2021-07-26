@@ -191,17 +191,17 @@
           grid-gap: 10px;
           margin-left: 57px;
           margin-top: 241px;
+          width: 390px;
         }
         @include sp{
           width: 75%;
           display: block;
-          margin-left: 36px;
+          margin-left: 1px;
         }
         &__item{
           height: 205px;
           object-fit: cover;
           @include tab{
-            width: 450px;
             height: 205px;
             object-fit: cover;
           }
