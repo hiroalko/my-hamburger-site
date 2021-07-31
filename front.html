@@ -127,10 +127,12 @@
     <script>
         $('.p-header__sp-title').on('click',function(){
             $('.l-sidebar').toggleClass('active');
+            $('body').css('position', 'fixed');
         });
         // 押したらサイドバーが現れる
         $('.batsu').click(function() {
             $('.l-sidebar').toggleClass('active');
+            $('body').css('position', 'relative');
         });
         // 押したらサイドバーが消える
     </script>

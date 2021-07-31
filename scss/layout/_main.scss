@@ -11,7 +11,8 @@ h2{
 
 .main {
   justify-content: space-between;
-  padding: 35px;
+  padding: 24px;
+  // ３５pxから変更
 }
 .l-main__title__front{
   height: 530px;
@@ -46,6 +47,7 @@ p{
   width: 100%;
   padding: 70px;
   box-sizing: border-box;
+ 
   @include sp{
     padding: 20px;
     display: inline-block;
@@ -54,18 +56,48 @@ p{
     background-image: url(/img/front-main1.png);
     width: 42%;
     margin-right: 20px;
+    position: relative;
+    h2{
+      color: #ffffff;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      background: #ffff;
+      height: 8px;
+      width: 60px;
+    }
     @include sp{
-      width: 81%;
-      margin-left: 18px;
+      width: 91%;
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
   .l-main__img__right{
     background-image: url(/img/front-main2.png);
     width: 42%;
     margin-left: 20px;
+    position: relative;
+    h2{
+      color: #ffffff;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      background: #ffff;
+      height: 8px;
+      width: 60px;
+      
+    }
     @include sp{
-      width: 81%;
+      width: 91%;
       margin-top: 20px;
+      margin-right: 0px;
+      margin-left: 0px;
     }
   }
 }
@@ -74,26 +106,28 @@ p{
 .l-main__maps {
   top: 0px;
   position: relative;
-  iframe{
-    top: 89px;
-  }
+ 
 }
 
 .l-main__block {
   background-color: #707070;
   width: 61%;
-  height: 326px;
+  height: 100%;
+  box-sizing: border-box;
   position: absolute;
   padding: 6%;
   top: 1px;
   opacity: 0.7;
   @include tab{
-    height: 331px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   @include sp{
     padding: 2%;
-    width: 96%;
-    height: 429px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -115,26 +149,9 @@ p{
   @include sp{
     width: 100%;
   }
-  h3{
-    font-size: 3.7rem;
-    font-weight: bold;
-    margin-left: 100px;
-    @include sp{
-      position: absolute;
-      top: 288px;
-      right: 360px;
-      font-size: 2.25rem;
-    }
-  }
-  h6{
-    font-size: 1rem;
-    font-weight: bold;
-    @include sp{
-      position: absolute;
-      top: 328px;
-      left: 72px;
-    }
-  }
+  
+  
+ 
   
 }
 .l-main__content{

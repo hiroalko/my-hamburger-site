@@ -30,7 +30,7 @@
       @include sp{
         margin-bottom: 38px;
         top: 30px;
-        left: 117px;
+        left: 137px;
       }
 
       }
@@ -61,7 +61,8 @@
       display: block;
       width: 50px;/*枠の大きさ*/
       height: 50px;/*枠の大きさ*/
-      position: relative;
+      position: fixed;
+      right: 1px;
       margin: 0 0 0 auto;
       &::before, &::after{
         content: "";
@@ -88,6 +89,7 @@
         width: 50px;/*枠の大きさ*/
         height: 50px;/*枠の大きさ*/
         position: relative;
+        position: fixed;
         top: 9px;
         left: 490px;
         margin: 1px;
