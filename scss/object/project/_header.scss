@@ -24,15 +24,20 @@
       font-weight: bold;
       @include tab{
         position: absolute;
-        top: 50px;
-        left: 212px;
+        top: 15%;
+        left: 30%;
     }
       @include sp{
+        font-size: 2.5rem;
         margin-bottom: 38px;
-        top: 30px;
-        left: 137px;
+        top: 14%;
+        left: 23%;
       }
 
+      }
+      .p-header__title a{
+        color: #707070;
+        text-decoration: none;
       }
       
   
@@ -51,7 +56,7 @@
       display: block;
       position: absolute;
       top: 14px;
-      left: 480px;
+      left: 83%;
       
     }
   }
@@ -124,14 +129,16 @@
       width: 50%;
       @include tab{
         position: absolute;
-        top: 142px;
-        left: 200px;
+        width: 71%;
+        top: 59%;
+        left: 16%;
       }
      
       @include sp{
         position: absolute;
-        top: 113px;
-        left: 140px;
+        top: 64%;
+        left: 8%;
+        width: 83%;
       }
       }
     .p-header__search {
