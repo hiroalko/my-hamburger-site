@@ -47,21 +47,25 @@
     font-size: 3.7rem;
     font-weight: bold;
     margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include sp{
-      position: absolute;
-      top: 288px;
-      right: 360px;
       font-size: 2.25rem;
-     
+      margin-left: 10%;
     }}
     .p-main__subtitle span{
       font-size: 1rem;
       font-weight: bold;
+      margin-top: 3%;
     }
     .p-main__subtitle br{
       display: none;
       @include tab{
         display: none ;
+      }
+      @include sp{
+        display: block;
       }
     }
    
@@ -154,9 +158,7 @@
         @include tab{
           margin-top: 1%;
         }
-        @include sp{
-          margin-top: 30px;
-        }
+       
       }
       .p-picture__list {
         display: flex;
@@ -207,18 +209,21 @@
         display: flex;
         justify-content: center;
         padding: 30px;
-      //  画像が小さくなる
+    
         img{
           width: 50%;
+          @include sp{
+            width: 100%;
+          }
         }
       }
 
       .p-picture__title{
         width: 30%;
         display: grid;
-        grid-template-columns: 320px 320px 320px;
+        grid-template-columns: 290px 290px 290px;
         gap: 10px;
-        margin-left: 14px;
+        margin-left: 5%;
         @include tab{
           display: grid;
           grid-template-columns: 1fr 1fr; 
@@ -231,7 +236,8 @@
         @include sp{
           width: 75%;
           display: block;
-          margin-left: 1px;
+          margin-left: 12%;
+          margin-top: 0;
         }
         &__item{
           height: 205px;

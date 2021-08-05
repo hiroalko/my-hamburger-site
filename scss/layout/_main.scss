@@ -57,45 +57,38 @@ p{
     width: 42%;
     margin-right: 20px;
     position: relative;
-    h2{
-      color: #ffffff;
-      @include tab{
-        font-size: 3rem;
-      }
-      @include sp{
-        font-size: 2.75rem;
-      }
-    }
+   
     h2::after {
       content: "";
-      position: absolute;
-      top: 125px;
-      left: 32px;
+      display: block;
       background: #ffff;
       height: 8px;
       width: 60px;
       @include tab{
-        top: 134px;
-        left: 77px;
         height: 5px;
         width: 50px;
       }
       @include sp{
-        top: 93px;
-        left: 43px;
         width: 50px;
         margin-left: 0px;
         margin-right: 0px;
 
       }
     }
-    @include tab{
-      padding: 10%;
-    }
+    
     @include sp{
       width: 81%;
       margin-left: 0px;
       margin-right: 0px;
+    }
+  }
+  .title{
+    color: #ffffff;
+    @include tab{
+      font-size: 2.7rem;
+    }
+    @include sp{
+      font-size: 2.75rem;
     }
   }
   .l-main__img__right{
@@ -103,39 +96,19 @@ p{
     width: 42%;
     margin-left: 20px;
     position: relative;
-    h2{
-      color: #ffffff;
-      @include tab{
-        font-size: 3rem;
-      }
-      @include sp{
-        font-size: 2.75rem;
-      }
-    }
     h2::after {
       content: "";
-      position: absolute;
-      top: 125px;
-      left: 32px;
+      display: block;
       background: #ffff;
       height: 8px;
       width: 60px;
       @include tab{
-        top: 134px;
-        left: 77px;
         height: 5px;
         width: 50px;
       }
-      @include sp{
-        top: 92px;
-        left: 40px;
-
-      }
       
     }
-    @include tab{
-      padding: 10%;
-    }
+   
     @include sp{
       width: 81%;
       margin-top: 20px;
@@ -184,8 +157,6 @@ p{
   height: 239px;
   width: 82vw;
   background-image: url(/img/archive-img.png);
-  display: flex;
-  align-items: center;
   @include tab{
     width: 100vw;
   }
@@ -217,7 +188,7 @@ p{
     line-height: 1.2;
     margin-top: 20px;
     @include sp{
-      margin: 30px 18px 19px 22px;
+      margin: 30px 18px 19px 36px;
       line-height: 1.5;
     }
   }
@@ -246,7 +217,7 @@ p{
       height: 100%;
       object-fit: cover;
       @include sp{
-      margin-left: 40px;
+      margin-left: 38px;
     }
   }
  }
@@ -262,7 +233,7 @@ p{
   @include sp{
     padding-left: 22px;
     width: 85%;
-    margin-left: 40px;
+    margin-left: 38px;
  }
   h3{
     font-size: 2.2rem;
@@ -295,25 +266,28 @@ p{
     text-decoration: none;
     display: block;
     border-radius: 40px;
-    padding: 19px 20px;
+    padding: 16px 20px;
     margin-bottom: 60px;
     color: #707070;
     background-color: white;
     box-sizing: border-box;
-    width: 40%;
+    width: 44%;
     height: 55px;
     display: flex;
     justify-content: center;
     margin-top: 20px;
     position: relative;
-    left: 95px;
+    left: 70px;
     @include tab{
+      display: block;
       border-radius: 26px;
-      width: 96%;
-      height: 12%;
+      width: 99%;
       left: 4%;
+      text-align: center;
     }
     @include sp{
+      width: 71%;
+      text-align: center;
       margin-bottom: 70px;
     }
   }
