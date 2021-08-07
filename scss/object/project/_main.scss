@@ -213,17 +213,16 @@
         img{
           width: 50%;
           @include sp{
-            width: 100%;
+            width: 80%;
           }
         }
       }
 
       .p-picture__title{
-        width: 30%;
         display: grid;
-        grid-template-columns: 290px 290px 290px;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
-        margin-left: 5%;
+      
         @include tab{
           display: grid;
           grid-template-columns: 1fr 1fr; 
