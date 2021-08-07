@@ -612,7 +612,7 @@ table td, table th {
 
 .c-site__btn button {
   width: 30%;
-  height: 104px;
+  padding: 0;
   border-radius: 20px;
   margin-bottom: 60px;
 }
@@ -620,6 +620,9 @@ table td, table th {
 .c-site__btn button a {
   text-decoration: none;
   color: #3C2A10;
+  display: block;
+  padding: 52px 0;
+  border-radius: 20px;
 }
 
 @media (max-width: 599px) {
