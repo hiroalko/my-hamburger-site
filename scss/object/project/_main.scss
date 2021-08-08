@@ -7,6 +7,9 @@
   }
   .p-box{
     margin-top: 680px;
+    @include sp{
+      padding: 0 10px 11px 10px;
+    }
     &__take-out{
      background-color: white;
      padding: 10px;

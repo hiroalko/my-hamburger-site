@@ -78,9 +78,10 @@ p{
     }
     
     @include sp{
-      width: 91%;
+      width: 100%;
       margin-left: 0px;
       margin-right: 0px;
+      padding: 0;
     }
   }
   .title{
@@ -91,6 +92,7 @@ p{
     @include sp{
       font-size: 2.75rem;
       white-space: nowrap;
+      margin: 20px 0 0 13px;
     }
   }
   .l-main__img__right{
@@ -113,10 +115,11 @@ p{
     }
    
     @include sp{
-      width: 91%;
+      width: 100%;
       margin-top: 20px;
       margin-right: 0px;
       margin-left: 0px;
+      padding: 0;
     }
   }
 }
@@ -147,6 +150,7 @@ p{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    overflow: hidden;
   }
 }
 
@@ -325,10 +329,10 @@ p{
     font-size: 3.7rem;
     font-weight: bold;
     color: white;
-    margin-left: 10px;
+    margin-left: 85px;
     @include sp{
       font-size: 2.25rem;
-      padding-left: 26px;
+     margin-left: 25px;
     }
   }
 }
@@ -390,5 +394,10 @@ table{
     font-size: 3.7rem;
     font-weight: bold;
     color: white;
+    margin-left: 86px;
+    @include sp{
+      margin-left: 25px;
+      font-size: 2.25rem;
+    }
   }
 }
