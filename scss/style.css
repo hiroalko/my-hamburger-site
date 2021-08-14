@@ -719,7 +719,7 @@ table td, table th {
 @media (max-width: 1200px) {
   .p-header__sp-title {
     display: block;
-    font-size: 1.25rem;
+    font-size: 2.1rem;
     position: absolute;
     right: 18px;
     top: 14px;
