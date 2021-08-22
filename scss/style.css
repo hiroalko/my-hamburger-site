@@ -559,7 +559,7 @@ table td, table th {
     height: 100%;
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 60%;
     right: 0;
     bottom: 0;
     overflow-y: auto;
@@ -575,7 +575,7 @@ table td, table th {
     width: 100vw;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10%;
     right: 0;
     bottom: 0;
     overflow-y: auto;
@@ -1163,7 +1163,8 @@ table td, table th {
 }
 
 .p-picture__column__bottom img {
-  width: 50%;
+  width: 68%;
+  margin-top: 61px;
 }
 
 @media (max-width: 599px) {
