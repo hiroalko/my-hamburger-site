@@ -5,10 +5,11 @@
     display: none;
     &.active{
       display: block;
-      width: 100%;
+      width: 100vw;
+      height: 100%;
       position: fixed;
       top: 0;
-      left: 0;
+      left: 50%;
       right: 0;
       bottom: 0;
       overflow-y: auto;
@@ -19,7 +20,7 @@
     display: none;
     &.active{
       display: block;
-      width: 100%;
+      width: 100vw;
       position: fixed;
       top: 0;
       left: 0;
@@ -29,6 +30,23 @@
     }
   }
   
+}
+
+.l-sidebar__overlay{
+  display: none;
+  @include tab{
+    &.active{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #707070;
+  }}
+      
 }
 
 
