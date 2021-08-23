@@ -98,6 +98,7 @@ h2 {
   background-image: url(/img/front-header.png);
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 599px) {
@@ -132,8 +133,9 @@ h2 {
 
 .l-main__img-box {
   display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 70px;
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -149,6 +151,7 @@ h2 {
   width: 42%;
   margin-right: 20px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .l-main__img-box .l-main__img__left h2::after {
@@ -207,6 +210,7 @@ h2 {
   width: 42%;
   margin-left: 20px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .l-main__img-box .l-main__img__right h2::after {
@@ -596,6 +600,7 @@ table td, table th {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.5;
     background: #707070;
   }
 }

@@ -19,6 +19,7 @@ h2{
   background-image: url(/img/front-header.png);
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
   @include sp{
     width: 100%;
     background-repeat: no-repeat;
@@ -44,8 +45,9 @@ p{
 
 .l-main__img-box {
   display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 70px;
+  padding: 40px;
   box-sizing: border-box;
  
   @include sp{
@@ -57,6 +59,7 @@ p{
     width: 42%;
     margin-right: 20px;
     position: relative;
+    background-repeat: no-repeat;
    
     h2::after {
       content: "";
@@ -100,6 +103,7 @@ p{
     width: 42%;
     margin-left: 20px;
     position: relative;
+    background-repeat: no-repeat;
     h2::after {
       content: "";
       display: block;
