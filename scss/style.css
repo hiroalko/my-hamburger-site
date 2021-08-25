@@ -1248,6 +1248,7 @@ table td, table th {
   font-size: 2.1rem;
   font-weight: bold;
   padding: 45px 0px 35px 40px;
+  margin-top: 82px;
 }
 
 @media (max-width: 1200px) {
@@ -1265,13 +1266,14 @@ table td, table th {
 .p-sidebar__category {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 85px;
   padding: 0px 0px 40px 20px;
 }
 
 .p-sidebar__category a {
   text-decoration: none;
   color: #707070;
+  margin-left: 46px;
 }
 
 .p-sidebar__menu {
@@ -1282,6 +1284,7 @@ table td, table th {
 .p-sidebar__menu a {
   text-decoration: none;
   color: #707070;
+  margin-left: 66px;
 }
 
 .p-sidebar__menu__menu {
