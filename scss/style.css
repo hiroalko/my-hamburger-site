@@ -99,7 +99,7 @@ h2 {
   background-image: url(/img/front-header.png);
   display: flex;
   align-items: center;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 599px) {
@@ -602,7 +602,7 @@ table td, table th {
     right: 0;
     bottom: 0;
     opacity: 0.5;
-    background: #707070;
+    background: #000000;
   }
 }
 
@@ -686,7 +686,7 @@ table td, table th {
 
 .p-header {
   padding: 19px 16px;
-  background-color: bisque;
+  background-color: #FFF7EF;
   justify-content: space-between;
   display: flex;
 }

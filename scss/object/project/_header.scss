@@ -1,7 +1,7 @@
 // .p-rankingのクラス名　サイト固有のまとまりを定義してパターン化するパーツ。案件に応じて追加していくパーツです。
 .p-header{
     padding: 19px 16px;
-    background-color: bisque;
+    background-color: #FFF7EF;
     justify-content: space-between;
     display: flex;
     @include tab{
