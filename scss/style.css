@@ -786,7 +786,7 @@ table td, table th {
     /*バツ線の長さ*/
     height: 10px;
     /*バツ線の太さ*/
-    background: #000;
+    background: #707070;
     transform: rotate(45deg);
     transform-origin: 0% 50%;
     position: absolute;
@@ -1247,8 +1247,9 @@ table td, table th {
 .p-sidebar__title {
   font-size: 2.1rem;
   font-weight: bold;
-  padding: 45px 0px 35px 40px;
+  margin-left: 46px;
   margin-top: 82px;
+  color: #707070;
 }
 
 @media (max-width: 1200px) {
@@ -1267,7 +1268,6 @@ table td, table th {
   font-size: 24px;
   font-weight: bold;
   margin-top: 85px;
-  padding: 0px 0px 40px 20px;
 }
 
 .p-sidebar__category a {
@@ -1276,9 +1276,14 @@ table td, table th {
   margin-left: 46px;
 }
 
+.p-sidebar__list {
+  margin-top: 37px;
+}
+
 .p-sidebar__menu {
   font-size: 1.2rem;
-  padding: 45px 0px 25px 29px;
+  margin-top: 23px;
+  line-height: 1.45;
 }
 
 .p-sidebar__menu a {
